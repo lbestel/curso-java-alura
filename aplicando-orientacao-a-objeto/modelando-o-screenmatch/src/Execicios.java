@@ -162,7 +162,7 @@ public class Execicios {
         cachorro.abanarRabo();
 
         System.out.println("****************************");
-        System.out.println("Exercício 6 - Conta Bancária Herança");
+        System.out.println("Exercício 13 - Conta Bancária Herança");
         System.out.println();
 
         ContaCorrente minhaConta = new ContaCorrente();
@@ -170,6 +170,25 @@ public class Execicios {
         minhaConta.sacar(300);
         minhaConta.cobrarTarifaMensal(5);
         minhaConta.consultarSaldo();
+
+        System.out.println("****************************");
+        System.out.println("Exercício 14 - Conversor de moeda (Interface)");
+        System.out.println();
+
+        ConversorMoeda dolar = new ConversorMoeda();
+        dolar.setValor(15);
+        System.out.println("US$" + dolar.getValor() + " convertido para reais fica R$" + dolar.converterDolarParaReal());
+
+        System.out.println("****************************");
+        System.out.println("Exercício 15 - Calculadora de Área (Interface)");
+        System.out.println();
+
+        CalculadoraSalaRetangular sala = new CalculadoraSalaRetangular();
+        sala.setAltura(15);
+        sala.setBase(30);
+
+        System.out.println("A área da sala é " + sala.calcularArea() + " metros");
+        System.out.println("O perimetro da sala é " + sala.calcularPerimetro() + " metros");
 
     }
 }
